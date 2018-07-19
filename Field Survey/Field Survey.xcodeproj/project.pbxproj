@@ -13,6 +13,14 @@
 		6FB95AFF20FF2E3600B9BE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FB95AFD20FF2E3600B9BE80 /* LaunchScreen.storyboard */; };
 		6FB95B0A20FF2E3600B9BE80 /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B0920FF2E3600B9BE80 /* Field_SurveyTests.swift */; };
 		6FB95B1520FF2E3600B9BE80 /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B1420FF2E3600B9BE80 /* Field_SurveyUITests.swift */; };
+		6FB95B2720FF497200B9BE80 /* Field Survey.json in Resources */ = {isa = PBXBuildFile; fileRef = 6FB95B2620FF497200B9BE80 /* Field Survey.json */; };
+		6FB95B2920FF69AF00B9BE80 /* Species.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B2820FF69AF00B9BE80 /* Species.swift */; };
+		6FB95B2B20FF6D0F00B9BE80 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B2A20FF6D0F00B9BE80 /* Classification.swift */; };
+		6FB95B2D2100252E00B9BE80 /* ClassificationsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B2C2100252E00B9BE80 /* ClassificationsJSONParser.swift */; };
+		6FB95B2F21002F4600B9BE80 /* ClassificationsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B2E21002F4600B9BE80 /* ClassificationsJSONLoader.swift */; };
+		6FB95B312100823600B9BE80 /* ClassificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B302100823600B9BE80 /* ClassificationsViewController.swift */; };
+		6FB95B33210082CE00B9BE80 /* ClassificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B32210082CE00B9BE80 /* ClassificationDetailViewController.swift */; };
+		6FB95B3521008FBE00B9BE80 /* ClassificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB95B3421008FBE00B9BE80 /* ClassificationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		6FB95B1020FF2E3600B9BE80 /* Field SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB95B1420FF2E3600B9BE80 /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		6FB95B1620FF2E3600B9BE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FB95B2620FF497200B9BE80 /* Field Survey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Field Survey.json"; sourceTree = "<group>"; };
+		6FB95B2820FF69AF00B9BE80 /* Species.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Species.swift; sourceTree = "<group>"; };
+		6FB95B2A20FF6D0F00B9BE80 /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		6FB95B2C2100252E00B9BE80 /* ClassificationsJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationsJSONParser.swift; sourceTree = "<group>"; };
+		6FB95B2E21002F4600B9BE80 /* ClassificationsJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationsJSONLoader.swift; sourceTree = "<group>"; };
+		6FB95B302100823600B9BE80 /* ClassificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationsViewController.swift; sourceTree = "<group>"; };
+		6FB95B32210082CE00B9BE80 /* ClassificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationDetailViewController.swift; sourceTree = "<group>"; };
+		6FB95B3421008FBE00B9BE80 /* ClassificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassificationTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,15 @@
 		6FB95AF320FF2E3500B9BE80 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				6FB95B2320FF473600B9BE80 /* Model */,
 				6FB95AF420FF2E3500B9BE80 /* AppDelegate.swift */,
 				6FB95AF820FF2E3500B9BE80 /* Main.storyboard */,
 				6FB95AFB20FF2E3600B9BE80 /* Assets.xcassets */,
 				6FB95AFD20FF2E3600B9BE80 /* LaunchScreen.storyboard */,
 				6FB95B0020FF2E3600B9BE80 /* Info.plist */,
+				6FB95B302100823600B9BE80 /* ClassificationsViewController.swift */,
+				6FB95B32210082CE00B9BE80 /* ClassificationDetailViewController.swift */,
+				6FB95B3421008FBE00B9BE80 /* ClassificationTableViewCell.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -120,6 +140,18 @@
 				6FB95B1620FF2E3600B9BE80 /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		6FB95B2320FF473600B9BE80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6FB95B2620FF497200B9BE80 /* Field Survey.json */,
+				6FB95B2820FF69AF00B9BE80 /* Species.swift */,
+				6FB95B2A20FF6D0F00B9BE80 /* Classification.swift */,
+				6FB95B2C2100252E00B9BE80 /* ClassificationsJSONParser.swift */,
+				6FB95B2E21002F4600B9BE80 /* ClassificationsJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +261,7 @@
 				6FB95AFF20FF2E3600B9BE80 /* LaunchScreen.storyboard in Resources */,
 				6FB95AFC20FF2E3600B9BE80 /* Assets.xcassets in Resources */,
 				6FB95AFA20FF2E3500B9BE80 /* Main.storyboard in Resources */,
+				6FB95B2720FF497200B9BE80 /* Field Survey.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB95B2D2100252E00B9BE80 /* ClassificationsJSONParser.swift in Sources */,
+				6FB95B3521008FBE00B9BE80 /* ClassificationTableViewCell.swift in Sources */,
+				6FB95B2920FF69AF00B9BE80 /* Species.swift in Sources */,
+				6FB95B312100823600B9BE80 /* ClassificationsViewController.swift in Sources */,
+				6FB95B2F21002F4600B9BE80 /* ClassificationsJSONLoader.swift in Sources */,
 				6FB95AF520FF2E3500B9BE80 /* AppDelegate.swift in Sources */,
+				6FB95B2B20FF6D0F00B9BE80 /* Classification.swift in Sources */,
+				6FB95B33210082CE00B9BE80 /* ClassificationDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
