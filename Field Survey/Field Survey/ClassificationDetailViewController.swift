@@ -23,6 +23,7 @@ class ClassificationDetailViewController: UIViewController {
         super.viewDidLoad()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
+        self.title = "Observation"
         
         speciesIconImageView.image = classification?.classification.image
         descriptionLabel.text = classification?.description
